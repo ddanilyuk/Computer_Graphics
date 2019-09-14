@@ -50,9 +50,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         'Built different charts with sqaures acording to params')
     parser.add_argument(
-        '--n', help='Initialize num for center rotation', type=int, default=50)
+        '--n', help='Initialize num for center rotation', type=int, default=5)
     parser.add_argument(
-        '--m', help='Initialize num for corner rotation', type=int, default=50)
+        '--m', help='Initialize num for corner rotation', type=int, default=5)
 
     args = parser.parse_args()
     main(args.n, args.m)
