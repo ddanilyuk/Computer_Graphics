@@ -1,7 +1,19 @@
+"""
+*****************************
+ONLY FOR TESTING NEW FEATURES
+NOT USED
+*****************************
+"""
+
 import tkinter as tk
 import math
 import argparse
-from triangle import Triangle as model
+from lab_1 import Triangle as model
+from lab_1 import SameSizeTriangle as model2
+
+
+def getheight(size: int) -> float:
+    return (size * math.sqrt(3)) / 2
 
 
 def main(n, m, colors_n, colors_m):
@@ -20,6 +32,19 @@ def main(n, m, colors_n, colors_m):
 
     mdl = model(*coords)
     mdl2 = model(*coords2)
+
+    coords3 = [
+        400, (200, 200)
+    ]
+    mdl3 = model2(*coords3)
+
+    size4 = 100
+    coords4 = [
+        size4, (mdl3.get_center_coord()[0] - (size4 / 2), mdl3.get_center_coord()[1])
+    ]
+
+    mdl4 = model2(*coords4)
+
     canv = tk.Canvas(window, width=700, height=700)
     switch = True
 
@@ -32,16 +57,14 @@ def main(n, m, colors_n, colors_m):
     # mdl.create_square(canv, 2, colors_m[0], center=True)
 
     for angle in [math.pi / n * i for i in range(-n, n)]:
-        mdl.create_square(
+        mdl3.create_square(
             canv, angle, colors_n[0], center=True)
         # switch = not switch
 
     for angle in [math.pi / m * i for i in range(-m, m)]:
-        mdl2.create_square(
+        mdl4.create_square(
             canv, angle, colors_n[1], center=False)
-        #switch = not switch
-
-
+        # switch = not switch
 
     window.mainloop()
 
@@ -50,9 +73,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         'Built different charts with sqaures acording to params')
     parser.add_argument(
-        '--n', help='Initialize num for center rotation', type=int, default=10)
+        '--n', help='Initialize num for center rotation', type=int, default=5)
     parser.add_argument(
-        '--m', help='Initialize num for corner rotation', type=int, default=12)
+        '--m', help='Initialize num for corner rotation', type=int, default=16)
     parser.add_argument(
         '--colors_inner', help='Initialize colors for center rotation',
         type=str, default=['black', 'black'], nargs=2)
