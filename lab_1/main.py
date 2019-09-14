@@ -36,11 +36,11 @@ def main(n, m):
     canvas = tk.Canvas(window, width=screenSize[0], height=screenSize[1])
 
     for angle in [math.pi / n * i for i in range(-n, n)]:
-        mdl1.create_square(
+        mdl1.creatr_figure(
             canvas, angle, color1, center=True)
 
     for angle in [math.pi / m * i for i in range(-m, m)]:
-        mdl2.create_square(
+        mdl2.creatr_figure(
             canvas, angle, color2, center=False)
 
     window.mainloop()

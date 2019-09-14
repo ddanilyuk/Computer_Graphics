@@ -1,3 +1,9 @@
+"""
+*****************************
+ONLY FOR TESTING NEW FEATURES
+NOT USED
+*****************************
+"""
 import math
 
 
@@ -49,7 +55,7 @@ class TriangleNew:
 
         return rotated_coords
 
-    def create_square(
+    def creatr_figure(
             self, canv, angle: float, color: str,
             center: bool = True, k: int = 0
     ):

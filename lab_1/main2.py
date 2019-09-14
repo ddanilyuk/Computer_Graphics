@@ -50,19 +50,19 @@ def main(n, m, colors_n, colors_m):
 
     colors_n = ["Blue", "Green"]
 
-    # mdl.create_square(canv, 0, color="Blue", center=True)
-    # mdl.create_square(canv, 0.5, colors_m[0], center=True)
-    # mdl.create_square(canv, 1, colors_m[0], center=True)
-    # mdl.create_square(canv, 1.5, colors_m[0], center=True)
-    # mdl.create_square(canv, 2, colors_m[0], center=True)
+    # mdl.creatr_figure(canv, 0, color="Blue", center=True)
+    # mdl.creatr_figure(canv, 0.5, colors_m[0], center=True)
+    # mdl.creatr_figure(canv, 1, colors_m[0], center=True)
+    # mdl.creatr_figure(canv, 1.5, colors_m[0], center=True)
+    # mdl.creatr_figure(canv, 2, colors_m[0], center=True)
 
     for angle in [math.pi / n * i for i in range(-n, n)]:
-        mdl3.create_square(
+        mdl3.creatr_figure(
             canv, angle, colors_n[0], center=True)
         # switch = not switch
 
     for angle in [math.pi / m * i for i in range(-m, m)]:
-        mdl4.create_square(
+        mdl4.creatr_figure(
             canv, angle, colors_n[1], center=False)
         # switch = not switch
 
