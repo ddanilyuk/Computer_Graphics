@@ -40,7 +40,7 @@ class SameSizeTriangle:
 
         return rotated_coordinates
 
-    def creatr_figure(self, canv, angle: float, color: str, center: bool = True, k: int = 0):
+    def create_figure(self, canv, angle: float, color: str, center: bool = True, k: int = 0):
         m = self.rotate(angle, center=center)
 
         canv.create_line(m[0][0] - k, m[0][1] - k, m[1][0] - k, m[1][1] - k, fill=color)

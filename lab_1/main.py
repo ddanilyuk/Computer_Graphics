@@ -22,6 +22,7 @@ def main(n, m):
         are calculated automatically (should be in the center) 
         depending on the coordinates larger figure
     '''
+    canvas = tk.Canvas(window, width=screenSize[0], height=screenSize[1])
 
     coordinates1 = [
         size1, (startPoint1[0], startPoint1[1])
@@ -33,15 +34,11 @@ def main(n, m):
     ]
     mdl2 = model(*coordinates2)
 
-    canvas = tk.Canvas(window, width=screenSize[0], height=screenSize[1])
-
     for angle in [math.pi / n * i for i in range(-n, n)]:
-        mdl1.creatr_figure(
-            canvas, angle, color1, center=True)
+        mdl1.create_figure(canvas, angle, color1, center=True)
 
     for angle in [math.pi / m * i for i in range(-m, m)]:
-        mdl2.creatr_figure(
-            canvas, angle, color2, center=False)
+        mdl2.create_figure(canvas, angle, color2, center=False)
 
     window.mainloop()
 
