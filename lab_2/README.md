@@ -8,7 +8,7 @@ sizeA            X coordinate size
 
 sizeB            Y coordinate size
 
-sizeR            whole sizr
+sizeR            whole size
 
 centerPoint      (x, y) figure center
 ```
