@@ -61,7 +61,7 @@ def main(n, m):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        'Built different charts with sqaures acording to params')
+        'Built different charts with figures according to params')
     parser.add_argument(
         '--n', help='Initialize num for first figure rotation', type=int, default=4)
     parser.add_argument(

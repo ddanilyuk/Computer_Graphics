@@ -45,7 +45,7 @@ def main(n, m):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        'Built different charts with sqaures acording to params')
+        'Built different charts with triangles according to params')
     parser.add_argument(
         '--n', help='Initialize num for center rotation', type=int, default=5)
     parser.add_argument(
