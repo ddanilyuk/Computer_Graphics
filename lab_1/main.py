@@ -11,11 +11,11 @@ def main(n, m):
     screenSize = (700, 700)  # (width, height)
 
     size1 = 400  # Mark: - Size of larger figure
-    startPoint1 = (100, 100)  # (x, y)  Start point of larger figure
-    color1 = "Blue"
+    startPoint1 = (140, 120)  # (x, y)  Start point of larger figure
+    color1 = "Orange"
 
     size2 = 110  # Mark: - Size of smaller figure
-    color2 = "Green"
+    color2 = "Navy Blue"
 
     '''
         Mark: - the start point coordinates of the smaller figure
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--n', help='Initialize num for center rotation', type=int, default=5)
     parser.add_argument(
-        '--m', help='Initialize num for corner rotation', type=int, default=5)
+        '--m', help='Initialize num for corner rotation', type=int, default=12)
 
     args = parser.parse_args()
     main(args.n, args.m)
