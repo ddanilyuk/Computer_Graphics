@@ -4,38 +4,38 @@ import numpy
 
 class Figure:
 
-    def __init__(self, sizeA: int, sizeB: int, sizeR: int, sizeN: int, startPoint: tuple):
+    def __init__(self, sizeA: int, sizeB: int, sizeR: int, sizeN: int, centerPoint: tuple):
         self.sizeA = sizeA
         self.sizeB = sizeB
         self.sizeR = sizeR
         self.sizeN = sizeN
-        self.startPoint = startPoint
+        self.centerPoint = centerPoint
 
     def getXY(self) -> list:
         allPoints: list = []
         for t in numpy.arange(0.0, self.sizeN * math.pi, 0.1):
             x = self.sizeA * self.sizeR * pow(math.sin(t), 3)
             y = self.sizeB * self.sizeR * pow(math.cos(t), 3)
-            x += self.startPoint[0]
-            y += self.startPoint[1]
+            x += self.centerPoint[0]
+            y += self.centerPoint[1]
 
             allPoints.append((x, y))
 
         return allPoints
 
     def turning_point_1(self) -> tuple:
-        x = self.startPoint[0] + self.sizeA * self.sizeR
-        y = self.startPoint[1] + self.sizeB * self.sizeR
+        x = self.centerPoint[0] + self.sizeA * self.sizeR
+        y = self.centerPoint[1] + self.sizeB * self.sizeR
         return x, y
 
     def turning_point_2(self) -> tuple:
-        x = self.startPoint[0] + (self.sizeA * self.sizeR / 2)
-        y = self.startPoint[1] + (self.sizeB * self.sizeR / 2)
+        x = self.centerPoint[0] + (self.sizeA * self.sizeR / 2)
+        y = self.centerPoint[1] + (self.sizeB * self.sizeR / 2)
         return x, y
 
     def turning_point_center(self) -> tuple:
-        x = self.startPoint[0]
-        y = self.startPoint[1]
+        x = self.centerPoint[0]
+        y = self.centerPoint[1]
         return x, y
 
     def _transform(self, x: tuple, y: tuple, turnPoint: tuple, angle: float) -> tuple:
@@ -56,10 +56,10 @@ class Figure:
 
         return rotated_coordinates
 
-    def createFigure(self, canv, angle: float, color: str = "Black", turnPoint: int = 0):
+    def createFigure(self, canvas, angle: float, color: str = "Black", turnPoint: int = 0):
         m = self.rotate(angle, turnPoint=turnPoint)
 
         for i in range(len(m) - 1):
-            canv.create_line(m[i][0], m[i][1], m[i + 1][0], m[i + 1][1], fill=color)
+            canvas.create_line(m[i][0], m[i][1], m[i + 1][0], m[i + 1][1], fill=color)
 
-        canv.pack()
+        canvas.pack()

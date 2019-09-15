@@ -13,18 +13,18 @@ def main(n, m):
     canvas = tk.Canvas(window, width=screenSize[0], height=screenSize[1])
 
     # Here is 4 pre-sets (choose from 1 to 5) or do your own figure
-    preSetNumber = 4
+    preSetNumber = 5
 
     if preSetNumber == 1:
-        mdl = figure(20, 20, 15, 5, (350, 350))
+        mdl = figure(20, 10, 15, 5, (350, 350))
         mdl.createFigure(canvas, 0, "Red")
 
     elif preSetNumber == 2:
         n = 5
         m = 5
 
-        mdl1 = figure(20, 20, 6, 5, (250, 250))
-        mdl2 = figure(20, 20, 12, 5, (250, 250))
+        mdl1 = figure(20, 20, 6, 5, (350, 350))
+        mdl2 = figure(20, 20, 12, 5, (350, 350))
 
         for angle in [math.pi / n * i for i in range(-n, n)]:
             mdl1.createFigure(canvas, angle, "Blue", turnPoint=0)
