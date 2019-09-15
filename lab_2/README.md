@@ -1,4 +1,4 @@
-#Preview and Usage
+# Preview and Usage
 
 Built different charts with figure according to params
 
