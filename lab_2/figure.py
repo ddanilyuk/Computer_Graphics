@@ -42,8 +42,8 @@ class Figure:
         x -= turnPoint[0]
         y -= turnPoint[1]
 
-        temp_x = x * math.cos(angle) - y * math.sin(angle)
-        temp_y = x * math.sin(angle) + y * math.cos(angle)
+        temp_x = x * numpy.cos(angle) - y * numpy.sin(angle)
+        temp_y = x * numpy.sin(angle) + y * numpy.cos(angle)
 
         return temp_x + turnPoint[0], temp_y + turnPoint[1]
 
