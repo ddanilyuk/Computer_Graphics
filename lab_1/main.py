@@ -47,7 +47,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         'Built different charts with triangles according to params')
     parser.add_argument(
-        '--n', help='Initialize num for center rotation', type=int, default=5)
+        '--n', help='Initialize num for center rotation', type=int, default=2)
     parser.add_argument(
         '--m', help='Initialize num for corner rotation', type=int, default=12)
 
