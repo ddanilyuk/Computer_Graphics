@@ -13,7 +13,10 @@ def main(n, m):
     canvas = tk.Canvas(window, width=screenSize[0], height=screenSize[1])
 
     # Here is 5 pre-sets (choose from 1 to 5) or do your own figure
-    preSetNumber = 4
+    # YOU CAN CHOOSE AND CHECK
+    preSetNumber = 5
+    ##########################
+    ##########################
 
     if preSetNumber == 1:
         mdl = figure(20, 10, 15, 5, (350, 350))

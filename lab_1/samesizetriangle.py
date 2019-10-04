@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 
 class SameSizeTriangle:
@@ -26,8 +27,8 @@ class SameSizeTriangle:
         x -= center[0]
         y -= center[1]
 
-        temp_x = x * math.cos(angle) - y * math.sin(angle)
-        temp_y = x * math.sin(angle) + y * math.cos(angle)
+        temp_x = x * np.cos(angle) - y * np.sin(angle)
+        temp_y = x * np.sin(angle) + y * np.cos(angle)
 
         return temp_x + center[0], temp_y + center[1]
 

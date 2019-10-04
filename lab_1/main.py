@@ -28,6 +28,7 @@ def main(n, m):
         size1, (startPoint1[0], startPoint1[1])
     ]
     mdl1 = model(*coordinates1)
+    # mdl1.create_figure(canvas, 0, "Black")
 
     coordinates2 = [
         size2, (mdl1.get_center_coord()[0] - (size2 / 2), mdl1.get_center_coord()[1])
@@ -43,13 +44,14 @@ def main(n, m):
     window.mainloop()
 
 
+# edit n and m for different number of figures
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         'Built different charts with triangles according to params')
     parser.add_argument(
-        '--n', help='Initialize num for center rotation', type=int, default=2)
+        '--n', help='Initialize num for center rotation', type=int, default=50)
     parser.add_argument(
-        '--m', help='Initialize num for corner rotation', type=int, default=12)
+        '--m', help='Initialize num for corner rotation', type=int, default=60)
 
     args = parser.parse_args()
     main(args.n, args.m)
