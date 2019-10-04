@@ -1,5 +1,5 @@
 # Computer Graphics Labs
 
-### Try to steal my labs)
+### follow me)
 
 write on PYTHON
