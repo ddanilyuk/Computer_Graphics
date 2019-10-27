@@ -22,6 +22,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="triangle.Triangle" />
+          <option value="plotly.graph_objects.Surface" />
         </list>
       </option>
     </inspection_tool>
