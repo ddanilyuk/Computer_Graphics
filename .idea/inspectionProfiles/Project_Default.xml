@@ -23,6 +23,7 @@
         <list>
           <option value="triangle.Triangle" />
           <option value="plotly.graph_objects.Surface" />
+          <option value="angel" />
         </list>
       </option>
     </inspection_tool>

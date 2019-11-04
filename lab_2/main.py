@@ -14,7 +14,7 @@ def main(n, m):
 
     # Here is 5 pre-sets (choose from 1 to 5) or do your own figure
     # YOU CAN CHOOSE AND CHECK
-    preSetNumber = 5
+    preSetNumber = 1
     ##########################
     ##########################
 
