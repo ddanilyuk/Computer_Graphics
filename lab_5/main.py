@@ -53,8 +53,8 @@ def main(A, B, R, size) -> None:
         center2 = model2.get_center()
 
         if (
-                abs(center1[0] - center2[0]) <= 180 and
-                abs(center1[1] - center2[1]) <= 180
+                abs(center1[0] - center2[0]) <= 100 and
+                abs(center1[1] - center2[1]) <= 100
         ):
             model1.change_direction(x=True, y=True)
             model1.change_color(
