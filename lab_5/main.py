@@ -38,11 +38,11 @@ def main(A, B, R, size) -> None:
     model1 = MV_model(
         canvas, formula_for_coords, speed_1,
         center=(random.randint(100, 400), random.randint(100, 300)),
-        timeon=50)
+        timeon=25)
     model2 = MV_model(
         canvas, formula_for_coords, speed_2,
         center=(random.randint(600, 1000), random.randint(500, 800)),
-        timeon=50)
+        timeon=25)
 
     def check_distance():
         """

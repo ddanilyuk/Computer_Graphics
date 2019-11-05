@@ -27,7 +27,7 @@ class MovingModel:
 
         self.center = center
         self.time = timeon
-        self.angle = np.pi / 10
+        self.angle = np.pi / 12
         self.speed = speed
         self.color = color
 
@@ -173,9 +173,9 @@ class MovingModel:
         :param x, y: show which speed axis to change
         """
         if x:
-            self.speed['x'] = -self.speed['x']
+            self.speed['x'] = -self.speed['x'] * 1.05
         if y:
-            self.speed['y'] = -self.speed['y']
+            self.speed['y'] = -self.speed['y'] * 1.05
 
     def change_color(self, color) -> None:
         """
