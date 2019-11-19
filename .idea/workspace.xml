@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="089a580f-3f95-452b-94c5-be7cf561ee26" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lab_6/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab_6/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doc/lab_5.docx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc/lab_5.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_5/figure.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_5/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_5/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_5/movingModel.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lab_5.main">
+  <component name="RunManager" selected="Python.lab_6.main">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="labsPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,11 +188,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lab_6.main" type="PythonConfigurationType" factoryName="Python">
+      <module name="labsPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_6" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_6/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.lab_1.main" />
       <item itemvalue="Python.lab_2.main" />
       <item itemvalue="Python.lab_3.main" />
       <item itemvalue="Python.lab_5.main" />
+      <item itemvalue="Python.lab_6.main" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -211,7 +229,9 @@
       <workItem from="1572864488990" duration="2627000" />
       <workItem from="1572887741948" duration="5149000" />
       <workItem from="1572991526860" duration="2717000" />
-      <workItem from="1573677907328" duration="76000" />
+      <workItem from="1573677907328" duration="534000" />
+      <workItem from="1573683010492" duration="225000" />
+      <workItem from="1573898347777" duration="2461000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <created>1568449165341</created>
@@ -409,7 +429,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572992659728</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="[edit] lab5">
+      <created>1573678049874</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1573678049875</updated>
+    </task>
+    <task id="LOCAL-00030" summary="[edit] lab5">
+      <created>1573678188885</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1573678188885</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +480,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="[edit] lab5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/labsPython$lab_5_main.coverage" NAME="lab_5.main Coverage Results" MODIFIED="1573678170712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_5" />
+    <SUITE FILE_PATH="coverage/labsPython$lab_5_main.coverage" NAME="lab_5.main Coverage Results" MODIFIED="1573899099617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_5" />
     <SUITE FILE_PATH="coverage/labsPython$lab_2_main.coverage" NAME="lab_2.main Coverage Results" MODIFIED="1572864698572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab_2" />
   </component>
 </project>
